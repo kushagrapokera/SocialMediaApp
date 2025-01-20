@@ -122,3 +122,15 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# A user tries to access a restricted page that requires authentication (e.g., via the @login_required decorator).
+# Django checks if the user is authenticated:
+# If not authenticated, Django redirects them to the URL specified by LOGIN_URL.
+# If authenticated, the user is allowed to access the view.
+LOGIN_URL = 'login'
+
+
+# A user clicks a "Logout" link.
+# Django processes the logout request and, by default, redirects the user to the URL specified by LOGOUT_URL (or the page configured via the next parameter in the logout view).
+LOGOUT_URL = 'logout'
