@@ -134,3 +134,4 @@ LOGIN_URL = 'login'
 # A user clicks a "Logout" link.
 # Django processes the logout request and, by default, redirects the user to the URL specified by LOGOUT_URL (or the page configured via the next parameter in the logout view).
 LOGOUT_URL = 'logout'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
